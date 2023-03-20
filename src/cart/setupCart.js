@@ -1,4 +1,3 @@
-// import
 import {
   getStorageItem,
   setStorageItem,
@@ -8,6 +7,5 @@ import {
 import { openCart } from './toggleCart.js';
 import { findProduct } from '../store.js';
 import addToCartDOM from './addToCartDOM.js';
-// set items
 
 export const addToCart = () => {};

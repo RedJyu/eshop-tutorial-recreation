@@ -11,4 +11,6 @@ close.addEventListener('click', () => {
   cart.classList.remove('show');
 });
 
-export const openCart = () => {};
+export const openCart = () => {
+  cart.classList.add('show');
+};
