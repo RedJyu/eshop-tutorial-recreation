@@ -12,7 +12,13 @@ const getElement = (selection) => {
   );
 };
 
-const formatPrice = () => {};
+const formatPrice = (price) => {
+  let formPrice = new Intl.NumberFormat('pl-PL', {
+    style: 'currency',
+    currency: 'PLN',
+  }).format((price / 100).toFixed(2));
+  return formPrice;
+};
 
 const getStorageItem = (item) => {
   let storageItem = localStorage.getItem(item);
