@@ -708,6 +708,7 @@ Products Page
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .filter-error {
   position: absolute;
   top: 5rem;
@@ -715,6 +716,11 @@ Products Page
   width: 100%;
   text-align: center;
   margin-top: 4rem;
+}
+@media screen and (min-width: 400px) {
+  .filter-error {
+    top: 10rem;
+  }
 }
 /*
 =============== 
