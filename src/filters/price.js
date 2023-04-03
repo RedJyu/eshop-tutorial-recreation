@@ -19,7 +19,7 @@ const setupPrice = (store) => {
     let filteredStore = store.filter((product) => product.price / 100 <= value);
     display(filteredStore, getElement('.products-container'));
     if (filteredStore.length < 1) {
-      const products = getElement('.products-container');
+      const products = getElement('.products-container', true);
       products.innerHTML = `<h3>Sorry nothing matches your price range</h3>`;
     }
   });

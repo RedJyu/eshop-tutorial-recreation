@@ -20,7 +20,7 @@ const setupCompanies = (store) => {
           (product) => product.company === e.target.textContent
         );
       }
-      display(filteredStore, getElement('.products-container'));
+      display(filteredStore, getElement('.products-container'), true);
     }
   });
 };

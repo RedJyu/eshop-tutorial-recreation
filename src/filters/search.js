@@ -19,7 +19,7 @@ const setupSearch = (store) => {
         noProducts.innerHTML = `<h3 class='filter-error'>no such products in our database, sorry</h3>`;
       }
     } else {
-      display(store, getElement('.products-container'));
+      display(store, getElement('.products-container'), true);
     }
   });
 };
